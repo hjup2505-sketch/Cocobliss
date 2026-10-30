@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cocobliss Chocolate | Handcrafted Luxury Artisan Chocolates & Bespoke Hampers</title>
+  
+  <meta name="description" content="Cocobliss Chocolate crafts exquisite handmade artisan chocolates, single-origin dark tablets, silky truffles, and bespoke luxury gift hampers. A little piece of happiness in every bite." />
+  <meta name="keywords" content="handmade chocolates, artisan truffles, dark chocolate, luxury chocolate gift boxes, customized hampers, single origin cocoa" />
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Favicon Monogram -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%232D180C'/><circle cx='50' cy='50' r='44' fill='none' stroke='%23CBA052' stroke-width='3'/><text x='50%' y='60%' font-size='40' font-family='serif' font-weight='bold' fill='%23F7E7B4' text-anchor='middle'>CC</text></svg>" type="image/svg+xml" />
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Top Announcement Bar
+       ========================================================================= -->
+  <div class="top-bar">
+    <div class="inner-content container">
+      <span>✦ Complimentary artisanal gift packaging on all bespoke orders</span>
+      <span style="opacity: 0.6;">•</span>
+      <span>Handcrafted daily in small batches with love</span>
+      <span style="opacity: 0.6;">•</span>
+      <span>Inquiries: <a href="https://wa.me/917030054230" target="_blank" style="color:var(--c-gold-300); text-decoration:underline;">+91 70300 54230</a></span>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. Site Navigation Header
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      
+      <!-- Logo -->
+      <a href="#home" class="brand-logo" aria-label="Cocobliss Chocolate Home">
+        <div class="logo-crest">CC</div>
+        <div class="logo-text-wrap">
+          <span class="logo-name">Cocobliss Chocolate</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#home">Home</a>
+        <a href="#products">Our Creations</a>
+        <a href="#why-us">Why Cocobliss</a>
+        <a href="#about">Our Story</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="nav-actions">
+        <!-- Interactive Tasting Box Inquiry Drawer Toggle -->
+        <button class="tasting-box-btn" id="tasting-box-btn" aria-label="View Tasting Box Inquiry List">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+            <path d="M3 6h18"></path>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span>Tasting Box</span>
+          <span class="badge-count" id="box-count-badge">0</span>
+        </button>
+
+        <a href="#products" class="btn btn-primary btn-sm">Explore Menu</a>
+
+        <!-- Mobile Nav Toggle -->
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+  <aside class="mobile-menu" id="mobile-menu" aria-label="Mobile Navigation">
+    <div>
+      <div class="mobile-menu-header">
+        <div class="brand-logo">
+          <div class="logo-crest">CC</div>
+          <span class="logo-name">Cocobliss Chocolate</span>
+        </div>
+        <button id="close-mobile-menu-btn" style="font-size:1.5rem; color:var(--c-cocoa-900);" aria-label="Close menu">✕</button>
+      </div>
+
+      <nav class="mobile-nav-links">
+        <a href="#home" class="mobile-nav-link"><span>Home</span> <span>→</span></a>
+        <a href="#products" class="mobile-nav-link"><span>Our Products</span> <span>→</span></a>
+        <a href="#why-us" class="mobile-nav-link"><span>Why Choose Us</span> <span>→</span></a>
+        <a href="#about" class="mobile-nav-link"><span>About Us</span> <span>→</span></a>
+        <a href="#contact" class="mobile-nav-link"><span>Contact Us</span> <span>→</span></a>
+      </nav>
+    </div>
+
+    <div class="mobile-menu-footer">
+      <a href="https://wa.me/917030054230" target="_blank" class="btn btn-whatsapp" style="width:100%;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+        WhatsApp Concierge
+      </a>
+      <p style="font-size:0.75rem; text-align:center; color:var(--c-text-muted);">
+        Cocobliss Chocolate • Handcrafted Excellence
+      </p>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       3. Section: Home / Hero Photography & Tagline
+       ========================================================================= -->
+  <section class="hero-section" id="home">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
+    <div class="container hero-grid">
+      
+      <!-- Hero Copy -->
+      <div class="hero-text-content">
+        <div class="hero-tag">
+          <span>✦ Pure Single-Origin Cocoa ✦</span>
+        </div>
+        
+        <h1 class="hero-title">
+          A Little Piece of <br />
+          <span class="hero-tagline-highlight">Happiness in Every Bite.</span>
+        </h1>
+        
+        <p class="hero-description">
+          Welcome to Cocobliss Chocolate, where master European chocolaterie meets pure botanical wonder. Every ganache, truffle, and tablet is hand-poured in micro-batches with ethically sourced single-origin cacao and slow-churned farm dairy.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">
+            Explore Our Collection
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m9 18 6-6-6-6"></path>
+            </svg>
+          </a>
+          <button class="btn btn-secondary" id="hero-hamper-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+            Curate a Gift Hamper
+          </button>
+        </div>
+
+        <!-- Trust Badges Strip -->
+        <div class="hero-badges-row">
+          <div class="hero-badge-item">
+            <span class="badge-num">100%</span>
+            <span class="badge-label">Traceable Cacao</span>
+          </div>
+          <div class="hero-badge-item">
+            <span class="badge-num">Zero</span>
+            <span class="badge-label">Palm Oil or Preservatives</span>
+          </div>
+          <div class="hero-badge-item">
+            <span class="badge-num">Daily</span>
+            <span class="badge-label">Handcrafted Micro-Batches</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Showcase -->
+      <div class="hero-visual">
+        <div class="hero-main-card">
+          <img 
+            src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=1200&q=80" 
+            alt="Handcrafted luxury artisan chocolates by Cocobliss Chocolate" 
+            class="hero-img"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Floating Rhyming Handmade Chocolate Quote -->
+        <div class="hero-quote-card">
+          <div class="hero-quote-icon">🍫</div>
+          <div class="hero-quote-content">
+            <div class="hero-rhyme-quote">“Sweet bite, pure delight”</div>
+            <div class="hero-rhyme-sub">Handmade Chocolate Bliss</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. Section: Our Products (Filterable Catalog)
+       ========================================================================= -->
+  <section class="products-section" id="products">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-label">Handcrafted Collection</div>
+        <h2 class="section-title">Explore Our Art of Chocolate</h2>
+        <p class="section-subtitle">
+          From velvety dark single-estate bars to edible gold-dusted champagne truffles, each creation is meticulously tempered and finished by hand.
+        </p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="filter-tabs" role="tablist" aria-label="Filter chocolate products">
+        <button class="filter-btn active" data-filter="all" role="tab">All Creations</button>
+        <button class="filter-btn" data-filter="dark" role="tab">Dark Chocolates</button>
+        <button class="filter-btn" data-filter="milk" role="tab">Milk Chocolates</button>
+        <button class="filter-btn" data-filter="truffles" role="tab">Artisan Truffles</button>
+        <button class="filter-btn" data-filter="gift-boxes" role="tab">Gift Boxes</button>
+        <button class="filter-btn" data-filter="hampers" role="tab">Customised Hampers</button>
+      </div>
+
+      <!-- Dynamic Products Grid -->
+      <div class="products-grid" id="products-grid" aria-live="polite">
+        <!-- Injected dynamically via app.js -->
+      </div>
+
+      <!-- Bespoke Hamper Builder Interactive Banner -->
+      <div class="bespoke-banner-card">
+        <div class="bespoke-banner-text">
+          <span class="section-label" style="color:var(--c-gold-300);">Bespoke Gifting Concierge</span>
+          <h3>Looking for a Truly Personalized Gift?</h3>
+          <p>
+            Whether it is an intimate wedding favor, a landmark anniversary, or corporate festive hampers, our chocolatiers custom-tailor the box, ribbon, and chocolate assortments to your exact vision.
+          </p>
+          <div class="bespoke-steps-preview">
+            <span class="bespoke-step-pill">1. Choose Box Style</span>
+            <span class="bespoke-step-pill">2. Handpick Flavors</span>
+            <span class="bespoke-step-pill">3. French Satin Ribbon</span>
+            <span class="bespoke-step-pill">4. Handwritten Note</span>
+          </div>
+          <button class="btn btn-primary" id="open-hamper-modal-btn">
+            Design Your Hamper Now
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="bespoke-banner-cta">
+          <div style="font-family:var(--font-serif); font-size:3rem; color:var(--c-gold-400); margin-bottom:0.25rem;">✨</div>
+          <h4 style="color:var(--c-cream-50); font-size:1.35rem; margin-bottom:0.5rem;">Corporate & Wedding Inquiries</h4>
+          <p style="color:var(--c-cream-200); font-size:0.875rem; margin-bottom:1.25rem;">Direct consultation via WhatsApp</p>
+          <a href="https://wa.me/917030054230?text=Hello%20Cocobliss%20Chocolate!%20I%20would%20like%20to%20inquire%20about%20a%20custom%20order." target="_blank" class="btn btn-whatsapp btn-sm">
+            Quick WhatsApp Chat
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. Section: Why Choose Us
+       ========================================================================= -->
+  <section class="why-section" id="why-us">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-label">The Cocobliss Chocolate Standard</div>
+        <h2 class="section-title">Why Connoisseurs Choose Us</h2>
+        <p class="section-subtitle">
+          We reject shortcuts, artificial shelf-life enhancers, and industrial waxes. Pure cocoa butter, honest origins, and time-honored artisanal methods define every piece.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        
+        <!-- Feature 1 -->
+        <div class="why-card">
+          <div class="why-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+            </svg>
+          </div>
+          <h3 class="why-title">100% Single-Origin Cacao</h3>
+          <p class="why-desc">
+            Directly partnered with family micro-estates in Ghana, Ecuador, and Madagascar. Each bean is hand-sorted and traceable to its regional terroir.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="why-card">
+          <div class="why-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="m4.93 4.93 4.24 4.24"></path>
+              <path d="m14.83 9.17 4.24-4.24"></path>
+              <path d="m14.83 14.83 4.24 4.24"></path>
+              <path d="m9.17 14.83-4.24 4.24"></path>
+              <circle cx="12" cy="12" r="4"></circle>
+            </svg>
+          </div>
+          <h3 class="why-title">Artisanal Granite Tempering</h3>
+          <p class="why-desc">
+            Slowly cooled and agitated on Italian marble slabs to align the crystal structures of pure cocoa butter, yielding our signature glass-like snap and velvety melt.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="why-card">
+          <div class="why-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+          <h3 class="why-title">Pure, Clean Ingredients</h3>
+          <p class="why-desc">
+            Zero palm oils, zero artificial preservatives, and zero synthetic vanillin. Crafted exclusively with pure cocoa butter, fresh dairy cream, and unrefined raw sugars.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="why-card">
+          <div class="why-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20"></path>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+          <h3 class="why-title">Fresh Daily Micro-Batches</h3>
+          <p class="why-desc">
+            We pour only what is needed each day. You never receive factory-stored stock—only fresh, vibrant truffles bursting with living cacao aromatics.
+          </p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="why-card">
+          <div class="why-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              <path d="M2 13h20"></path>
+            </svg>
+          </div>
+          <h3 class="why-title">Bespoke Custom Gifting</h3>
+          <p class="why-desc">
+            Personalize your gifting with hand-stamped wax seals, custom printed sleeves, French grosgrain ribbons, and handwritten calligraphy message cards.
+          </p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="why-card">
+          <div class="why-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.29 7 12 12 20.71 7"></polyline>
+              <line x1="12" y1="22" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <h3 class="why-title">Eco-Conscious Packaging</h3>
+          <p class="why-desc">
+            Every keepsake box and wrapper is 100% recyclable, biodegradable, or reusable as luxury vanity storage, honoring the earth that produces our cacao.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. Section: About Us & The Artisan Philosophy
+       ========================================================================= -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      
+      <!-- Visual Column -->
+      <div class="about-imagery">
+        <div class="about-main-wrapper">
+          <img 
+            src="https://images.unsplash.com/photo-1481391243133-f96216dcb5d2?auto=format&fit=crop&w=1000&q=80" 
+            alt="Handcrafted artisan chocolates by Cocobliss Chocolate" 
+            class="about-img-main"
+            loading="lazy"
+            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=1000&q=80';"
+          />
+        </div>
+        <!-- Floating Accent Handmade Chocolate Card -->
+        <div class="about-floating-accent">
+          <img 
+            src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=600&q=80" 
+            alt="Freshly dusted handmade cocoa truffles" 
+            class="about-accent-img"
+            loading="lazy"
+          />
+          <div class="about-accent-badge">
+            <span>✨ Purely Handmade</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Story & Philosophy Column -->
+      <div class="about-content">
+        <div class="section-label" style="color:var(--c-gold-300);">Our Heritage</div>
+        <h2 class="section-title light">The Art of Chocolate, Reimagined.</h2>
+        
+        <p class="about-text">
+          Cocobliss Chocolate began not in a commercial kitchen, but in a small sunlit studio with a single vintage granite conching machine and an unyielding passion for honest cacao. We believed that modern confectioneries had forgotten the romance of slow chocolate—the patience required to coax out floral, fruity, and smoky notes naturally present in the cacao bean.
+        </p>
+
+        <p class="about-text">
+          Today, our chocolatiers honor that foundational promise. We source small bags of beans directly from sustainable, fair-wage family farms. We roast at low temperatures, stone-grind for over 48 hours, and hand-dip every ganache center with delicate precision.
+        </p>
+
+        <!-- Quote Card -->
+        <blockquote class="artisan-quote">
+          <p>"Purely Handcrafted With Happiness 🍫"</p>
+          <cite>— Kunal Badera, Founder</cite>
+        </blockquote>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. Section: Contact Us (With WhatsApp & Instagram Placeholders)
+       ========================================================================= -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-label">Connect With Us</div>
+        <h2 class="section-title">We Would Love to Hear From You</h2>
+        <p class="section-subtitle">
+          Have questions about our cacao origins, bespoke wedding favors, or dietary inquiries? Our friendly concierge team is always here to assist.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        
+        <!-- Contact Information & Direct Channels -->
+        <div class="contact-info-card">
+          <span class="section-label" style="color:var(--c-gold-300);">Direct Concierge</span>
+          <h3>Cocobliss Chocolate</h3>
+          <p>
+            Reach out to us directly through WhatsApp or Instagram for inquiries, orders, and bespoke gift hampers.
+          </p>
+
+          <div class="contact-channels">
+            
+            <!-- Address -->
+            <div class="channel-item">
+              <div class="channel-icon">📍</div>
+              <div class="channel-detail">
+                <h5>Address</h5>
+                <p>Jaywanti Nagar, Ambajogai, Maharashtra, 431517</p>
+              </div>
+            </div>
+
+            <!-- Operating Hours -->
+            <div class="channel-item">
+              <div class="channel-icon">⏰</div>
+              <div class="channel-detail">
+                <h5>Working Hours</h5>
+                <p>Monday – Sunday: 10:00 AM – 11:00 PM</p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="channel-item">
+              <div class="channel-icon">✉️</div>
+              <div class="channel-detail">
+                <h5>Email Inquiries</h5>
+                <p><a href="mailto:cocoblisschocolates@gmail.com">cocoblisschocolates@gmail.com</a></p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="channel-item">
+              <div class="channel-icon">📞</div>
+              <div class="channel-detail">
+                <h5>Telephone Concierge</h5>
+                <p><a href="tel:+917030054230">+91 70300 54230</a></p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Direct Instant Action Buttons (WhatsApp & Instagram Placeholders) -->
+          <div class="quick-connect-buttons">
+            <a href="https://wa.me/917030054230?text=Hello%20Cocobliss%20Chocolate!%20I%20would%20like%20to%20learn%20more%20about%20your%20chocolates." target="_blank" class="btn btn-whatsapp" style="width:100%; justify-content:center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              Chat on WhatsApp (+91 70300 54230)
+            </a>
+
+            <a href="https://instagram.com/cocoblisschocolate" target="_blank" class="btn btn-instagram" style="width:100%; justify-content:center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+              Follow @cocoblisschocolate on Instagram
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="contact-form-card">
+          <span class="section-label">Send a Message</span>
+          <h3>Personalized Inquiry</h3>
+          <p>
+            Whether planning an event or curating a tasting hamper, share your notes below and our team will get back to you promptly.
+          </p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              
+              <div class="form-group">
+                <label for="contact-name">Your Full Name *</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Charlotte DuPont" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. charlotte@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-phone">Phone / WhatsApp</label>
+                <input type="tel" id="contact-phone" class="form-input" placeholder="+91 70300 00000" />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-reason">Inquiry Type</label>
+                <select id="contact-reason" class="form-select">
+                  <option value="general">General Chocolate Inquiries</option>
+                  <option value="wedding">Bespoke Wedding Favors & Gifts</option>
+                  <option value="corporate">Corporate Festive Hampers</option>
+                  <option value="tasting">Private Tasting Session Booking</option>
+                  <option value="dietary">Dietary / Allergen Questions</option>
+                </select>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="contact-message">Your Message / Custom Details *</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Tell us about your chocolate preferences, estimated guest count, or special dates..." required></textarea>
+                <span class="form-helper">We respond within 24 business hours. No spam, ever.</span>
+              </div>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; margin-top:0.75rem;">
+              Send Inquiry
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" x2="11" y1="2" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. Instagram Visual Showcase Grid
+       ========================================================================= -->
+  <aside class="instagram-strip" aria-label="Instagram Gallery Showcase">
+    <div class="container instagram-header">
+      <div class="section-label">Moments Of Happiness</div>
+      <a href="https://instagram.com/cocoblisschocolate" target="_blank" class="instagram-handle">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#dc2743;">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+        </svg>
+        @cocoblisschocolate
+      </a>
+    </div>
+
+    <div class="instagram-grid">
+      
+      <a href="https://instagram.com/cocoblisschocolate" target="_blank" class="insta-item">
+        <img src="https://images.unsplash.com/photo-1582293041079-7814c2f12063?auto=format&fit=crop&w=600&q=80" alt="Fresh artisan truffles being rolled" loading="lazy" />
+        <div class="insta-overlay">
+          <span>📷</span>
+          <p>Hand-rolled Raspberry Ganache</p>
+        </div>
+      </a>
+
+      <a href="https://instagram.com/cocoblisschocolate" target="_blank" class="insta-item">
+        <img src="https://images.unsplash.com/photo-1614088685112-0a760b71a3c8?auto=format&fit=crop&w=600&q=80" alt="Gold foil stamped gift packaging" loading="lazy" />
+        <div class="insta-overlay">
+          <span>📷</span>
+          <p>Hand-tied French Satin Ribbons</p>
+        </div>
+      </a>
+
+      <a href="https://instagram.com/cocoblisschocolate" target="_blank" class="insta-item">
+        <img src="https://images.unsplash.com/photo-1548907040-4baa42d10919?auto=format&fit=crop&w=600&q=80" alt="Pure dark single origin cocoa blocks" loading="lazy" />
+        <div class="insta-overlay">
+          <span>📷</span>
+          <p>85% Single-Origin Ghana Cacao</p>
+        </div>
+      </a>
+
+      <a href="https://instagram.com/cocoblisschocolate" target="_blank" class="insta-item">
+        <img src="https://images.unsplash.com/photo-1526081347589-7fa3cb41b4b2?auto=format&fit=crop&w=600&q=80" alt="Luxury chocolate gift box presentation" loading="lazy" />
+        <div class="insta-overlay">
+          <span>📷</span>
+          <p>The Signature 16-Piece Velvet Box</p>
+        </div>
+      </a>
+
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       10. Beautiful Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        
+        <!-- Brand Intro -->
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom:0.75rem;">
+            <div class="logo-crest">CC</div>
+            <span class="logo-name">Cocobliss Chocolate</span>
+          </div>
+          <p class="footer-bio">
+            "A Little Piece of Happiness in Every Bite." Artisanal, ethically sourced handmade chocolates crafted in micro-batches with love, patience, and 100% single-origin cacao.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com/cocoblisschocolate" target="_blank" class="social-circle" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://wa.me/917030054230" target="_blank" class="social-circle" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+            <a href="mailto:cocoblisschocolates@gmail.com" class="social-circle" aria-label="Email Concierge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Artisan Menu</h4>
+          <ul class="footer-links">
+            <li><a href="#products">Dark Single-Origin Bars</a></li>
+            <li><a href="#products">Velvet Milk Chocolates</a></li>
+            <li><a href="#products">Hand-Rolled Truffles</a></li>
+            <li><a href="#products">Keepsake Gift Boxes</a></li>
+            <li><a href="#products">Bespoke Holiday Hampers</a></li>
+          </ul>
+        </div>
+
+        <!-- Hours & Studio -->
+        <div class="footer-col">
+          <h4>Working Hours & Location</h4>
+          <ul class="footer-hours-list">
+            <li>
+              <strong>Monday – Sunday</strong>
+              10:00 AM – 11:00 PM
+            </li>
+            <li>
+              <strong>Location</strong>
+              Jaywanti Nagar, Ambajogai, Maharashtra, 431517
+            </li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="footer-col footer-newsletter">
+          <h4>The Tasting Club</h4>
+          <p>
+            Join our private connoisseur circle. Receive invitations to rare micro-harvest releases and 10% off your initial bespoke order.
+          </p>
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" placeholder="Your email address" class="newsletter-input" required />
+            <button type="submit" class="btn btn-primary btn-sm" aria-label="Subscribe to Tasting Club">
+              Join
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 Cocobliss Chocolate. All rights reserved. Handcrafted with devotion.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#home">Privacy Policy (Placeholder)</a>
+          <a href="#home">Terms of Service (Placeholder)</a>
+          <a href="#about">Craftsmanship Manifesto</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       11. Tasting Box & Hamper Inquiry Drawer (Slide-Over Panel)
+       ========================================================================= -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="drawer-container" id="tasting-box-drawer" aria-label="Tasting Box Inquiry Drawer">
+    <div class="drawer-header">
+      <div style="display:flex; align-items:center; gap:0.6rem;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--c-gold-400)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+          <path d="M3 6h18"></path>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <h3>My Tasting Box</h3>
+      </div>
+      <button class="close-drawer-btn" id="close-drawer-btn" aria-label="Close Tasting Box">✕</button>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Empty State -->
+      <div class="drawer-empty-state" id="drawer-empty-state">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="8" cy="21" r="1"></circle>
+          <circle cx="19" cy="21" r="1"></circle>
+          <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+        </svg>
+        <h4>Your Tasting Box is Empty</h4>
+        <p style="font-size:0.9rem; line-height:1.5;">
+          Explore our dark tablets, silky truffles, and luxury hampers. Click "Add to Box" on any item to build your personal inquiry!
+        </p>
+      </div>
+
+      <!-- Items List -->
+      <div class="drawer-items-list" id="drawer-items-list">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <div class="drawer-note">
+        <strong>✨ Direct Concierge Inquiry:</strong><br />
+        This tasting list lets you send your desired chocolates directly to our chocolatier via WhatsApp or copy it to your message without any checkout hassles.
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.25rem;">
+        <span style="font-weight:600; color:var(--c-cocoa-800);">Total Selected Items:</span>
+        <span style="font-weight:700; font-size:1.1rem; color:var(--c-cocoa-900);" id="drawer-total-items">0 items</span>
+      </div>
+
+      <button class="btn btn-whatsapp" id="export-whatsapp-btn" style="width:100%;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+        Send Inquiry via WhatsApp
+      </button>
+
+      <button class="btn btn-outline-dark btn-sm" id="copy-inquiry-btn" style="width:100%;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+          <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+        </svg>
+        Copy Inquiry Details
+      </button>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       12. Quick View Modal (Full Chocolate Details)
+       ========================================================================= -->
+  <div class="modal-backdrop" id="quick-view-modal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="close-modal-btn" aria-label="Close modal">✕</button>
+
+      <div class="modal-content-grid">
+        <div class="modal-img-wrap">
+          <img id="modal-img" src="" alt="Chocolate preview" />
+        </div>
+
+        <div class="modal-details">
+          <span class="modal-category-tag" id="modal-category">Dark Chocolate</span>
+          <h3 class="modal-title" id="modal-title">Product Name</h3>
+          <div class="modal-price" id="modal-price">₹0.00</div>
+          <p class="modal-desc" id="modal-desc">Description</p>
+
+          <div class="modal-specs-list">
+            <div class="modal-spec-row">
+              <span class="modal-spec-label">Cacao Origin:</span>
+              <span class="modal-spec-val" id="modal-origin">—</span>
+            </div>
+            <div class="modal-spec-row">
+              <span class="modal-spec-label">Intensity Profile:</span>
+              <span class="modal-spec-val" id="modal-cacao">—</span>
+            </div>
+            <div class="modal-spec-row">
+              <span class="modal-spec-label">Dietary:</span>
+              <span class="modal-spec-val" id="modal-dietary">—</span>
+            </div>
+            <div class="modal-spec-row">
+              <span class="modal-spec-label">Pairing Suggestion:</span>
+              <span class="modal-spec-val" id="modal-pairing">—</span>
+            </div>
+            <div class="modal-spec-row">
+              <span class="modal-spec-label">Ingredients:</span>
+              <span class="modal-spec-val" id="modal-ingredients">—</span>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" id="modal-add-to-box-btn" style="width:100%;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 5v14M5 12h14"></path>
+            </svg>
+            Add to My Tasting Box
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       13. Interactive Custom Hamper Designer Modal
+       ========================================================================= -->
+  <div class="modal-backdrop hamper-builder-modal" id="hamper-modal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="close-hamper-modal-btn" aria-label="Close Hamper Builder">✕</button>
+
+      <div class="hamper-builder-body">
+        <div style="text-align:center; margin-bottom:2rem;">
+          <span class="section-label">Bespoke Gifting Service</span>
+          <h3 style="font-size:2rem; margin-bottom:0.5rem; color:var(--c-cocoa-900);">Design Your Custom Hamper</h3>
+          <p style="font-size:0.95rem; color:var(--c-text-secondary); max-width:540px; margin:0 auto;">
+            Customize your presentation box, ribbon trim, and gift message. Our concierge will curate your dream chocolate assortment.
+          </p>
+        </div>
+
+        <!-- Box Selection Options -->
+        <h4 style="font-size:1.1rem; color:var(--c-cocoa-900); margin-bottom:0.75rem;">1. Select Presentation Keepsake Box</h4>
+        <div class="hamper-option-grid">
+          
+          <div class="hamper-box-option selected" data-box-name="Signature Royal Velvet Box">
+            <h5>Royal Velvet Box</h5>
+            <span>Embossed chocolate velvet with gold foil crest</span>
+          </div>
+
+          <div class="hamper-box-option" data-box-name="Handcrafted Pine Keepsake Chest">
+            <h5>Handcrafted Pine Chest</h5>
+            <span>Solid natural pine with brass hinges and latch</span>
+          </div>
+
+          <div class="hamper-box-option" data-box-name="Regal Sovereign Leatherette Trunk">
+            <h5>Leatherette Trunk</h5>
+            <span>Vintage emerald & gold trunk with brass lock</span>
+          </div>
+
+        </div>
+
+        <!-- Ribbon and Accent Selection -->
+        <div class="form-grid" style="margin-top:1.5rem;">
+          <div class="form-group">
+            <label for="hamper-ribbon-select">2. French Satin Ribbon Color</label>
+            <select id="hamper-ribbon-select" class="form-select">
+              <option value="Champagne Soft Gold">Champagne Soft Gold</option>
+              <option value="Velvet Cocoa Brown">Velvet Cocoa Brown</option>
+              <option value="Royal Emerald Silk">Royal Emerald Silk</option>
+              <option value="Deep Bordeaux Burgundy">Deep Bordeaux Burgundy</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="hamper-message-input">3. Personalized Calligraphy Message</label>
+            <input type="text" id="hamper-message-input" class="form-input" placeholder="e.g. Happy 10th Anniversary, Dearest Sarah!" />
+          </div>
+        </div>
+
+        <div style="margin-top:2rem; text-align:center;">
+          <button class="btn btn-whatsapp" id="hamper-submit-whatsapp" style="width:100%; max-width:400px; margin:0 auto;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+            Send Custom Hamper Inquiry via WhatsApp
+          </button>
+          <p style="font-size:0.775rem; color:var(--c-text-muted); margin-top:0.6rem;">
+            Direct consultation via WhatsApp • No payment required upfront
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       14. Floating Utilities (WhatsApp Concierge & Back-to-Top)
+       ========================================================================= -->
+  <div class="floating-actions-bar">
+    <a href="https://wa.me/917030054230?text=Hello%20Cocobliss%20Chocolate!%20I%20have%20a%20question%20about%20your%20artisan%20chocolates." target="_blank" class="fab-btn fab-whatsapp" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+      </svg>
+    </a>
+
+    <button class="fab-btn fab-scroll-top" id="scroll-top-btn" aria-label="Scroll to top" title="Scroll to top">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m18 15-6-6-6 6"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- =========================================================================
+       15. Toast Notification System
+       ========================================================================= -->
+  <div class="toast-notice" id="toast-notice" role="status" aria-live="polite">
+    <span class="toast-icon">🍫</span>
+    <span id="toast-message">Notification message</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>

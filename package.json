@@ -1,0 +1,19 @@
+{
+  "name": "cocobliss-chocolate",
+  "version": "1.0.0",
+  "description": "Premium, modern website for Cocobliss Chocolate handmade artisan chocolates",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "cocobliss-chocolate",
+    "cocobliss",
+    "artisan-chocolates",
+    "luxury",
+    "handmade-chocolates",
+    "gourmet"
+  ],
+  "author": "Cocobliss Chocolate",
+  "license": "MIT"
+}
